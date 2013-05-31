@@ -38,34 +38,34 @@ tar xzvf php.tgz
 vulcan build -v -s php-$PHP_VERSION -o $tempdir/php-$PHP_VERSION-with-fpm-heroku.tar.gz -p /app/vendor/php -c \
   "./configure  --prefix=/app/vendor/php \
                 --with-config-file-path=/app/vendor/php \
-  			--disable-debug \
-				--disable-rpath \
-				--enable-fpm \
-				--enable-gd-native-ttf \
-				--enable-inline-optimization \
-				--enable-libxml \
-				--enable-mbregex \
-				--enable-mbstring \
-				--enable-pcntl \
-				--enable-soap=shared \
-				--enable-zip \
-				--with-bz2 \
+  		--disable-debug \
+		--disable-rpath \
+		--enable-fpm \
+		--enable-gd-native-ttf \
+		--enable-inline-optimization \
+		--enable-libxml \
+		--enable-mbregex \
+		--enable-mbstring \
+		--enable-pcntl \
+		--enable-soap=shared \
+		--enable-zip \
+		--with-bz2 \
                 --with-curl=/usr/lib \
-				--with-gd \
-				--with-gettext \
-				--with-jpeg-dir \
-				--with-mcrypt=/app/local \
-				--with-iconv \
-				--with-mhash \
-				--with-openssl \
-				--with-pcre-regex \
-				--with-mysql \
-				--with-mysqli \
-				--with-pdo-mysql \
-				--with-pgsql \
-				--with-pdo-pgsql \
-				--with-png-dir \
-				--with-zlib
+		--with-gd \
+		--with-gettext \
+		--with-jpeg-dir \
+		--with-mcrypt=/app/local \
+		--with-iconv \
+		--with-mhash \
+		--with-openssl \
+		--with-pcre-regex \
+		--with-mysql \
+		--with-mysqli \
+		--with-pdo-mysql \
+		--with-pgsql \
+		--with-pdo-pgsql \
+		--with-png-dir \
+		--with-zlib
                 --without-pdo-sqlite \
                 --without-sqlite3 \
                 && make install \
